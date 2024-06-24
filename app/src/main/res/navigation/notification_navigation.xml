@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_navigation"
+    app:startDestination="@id/notificationsFragment">
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="ru.dradefire.bottonnestednavigationexample.ui.notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_notificationsFragment_to_notificationsFragment2"
+            app:destination="@id/notificationsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment2"
+        android:name="ru.dradefire.bottonnestednavigationexample.ui.notifications.NotificationsFragment2"
+        android:label="fragment_notifications2"
+        tools:layout="@layout/fragment_notifications2" />
+</navigation>
